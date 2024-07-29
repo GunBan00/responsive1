@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -32,6 +34,50 @@ header {
     transition: all 0.5s;
 }
 
+/********************* pc버전 header의 메뉴 부분 (id: gnb) *********************/
+
+#gnb {
+    position: relative;
+    top: 10%;
+    left: 0;
+}
+
+#gnb li {
+    text-align: center;
+    height: 50px;
+}
+
+#gnb li a {
+    display: inline-block;
+
+    padding-top: 12px;
+    width: 100%;
+    height: 50px;
+    font-family: Ubuntu;
+}
+
+#gnb li a, #gnb li a:hover {
+    font-size: 24px;
+    color: orange;
+}
+
+#gnb li a:hover{
+    color: brown;
+    background-color: rgb(243, 217, 199);
+}
+
+.snsSet {
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+    text-align: center;
+}
+
+.snsSet a {
+    display: inline-block;
+}
+
+
 nav {
     position: relative;
     margin-left: 15%;
@@ -39,6 +85,26 @@ nav {
     height: 35px;
     background-color: cornflowerblue;
     transition: all 0.5s;
+}
+
+.navSet {
+    width: 180px;
+    float: right;
+}
+
+
+.navSet a {
+    display: inline-block;
+    height: 35px;
+    padding: 0 2px;
+}
+
+.navSet a img {
+    padding-top: 2px;
+}
+
+.navSet a img:hover {
+    opacity: 0.7;
 }
 
 section {
@@ -85,6 +151,7 @@ article:nth-child(12) { width: 20%; background-color: #222; }
 
 @media all and (min-width: 980px) and (max-width: 1299px) {
     header {
+        display: none;
         position: relative;
         width: 100%;
         height: 80px;
@@ -98,6 +165,7 @@ article:nth-child(12) { width: 20%; background-color: #222; }
 
 @media all and (min-width: 724px) and (max-width: 979px) {
     header {
+        display: none;
         position: relative;
         width: 100%;
         height: 80px;
@@ -127,6 +195,7 @@ article:nth-child(12) { width: 25%; }
 
 @media all and (min-width: 580px) and (max-width: 723px) {
     header {
+        display: none;
         position: relative;
         width: 100%;
         height: 80px;
@@ -157,6 +226,7 @@ article:nth-child(12) { display: none; }
 
 @media all and (min-width: 480px) and (max-width: 529px) {
     header {
+        display: none;
         position: relative;
         width: 100%;
         height: 80px;
@@ -186,6 +256,7 @@ article:nth-child(12) { width: 50%; }
 
 @media all and (max-width: 479px) {
     header {
+        display: none;
         position: relative;
         width: 100%;
         height: 80px;
